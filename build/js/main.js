@@ -1,4 +1,5 @@
 "use strict";
-const add = (a, b) => { return a + b; };
-const logMsg = (message) => { console.log(message); };
-logMsg(add(2, 1));
+let yearSpan = document.querySelector("span");
+let currentYear = new Date().getFullYear();
+yearSpan.setAttribute("datetime", currentYear);
+yearSpan.textContent = currentYear;
