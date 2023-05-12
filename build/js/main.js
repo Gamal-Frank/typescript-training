@@ -1,4 +1,4 @@
 "use strict";
-let myName = "frank";
-myName = "nick";
-console.log(myName);
+const add = (a, b) => { return a + b; };
+const logMsg = (message) => { console.log(message); };
+logMsg(add(2, 1));
